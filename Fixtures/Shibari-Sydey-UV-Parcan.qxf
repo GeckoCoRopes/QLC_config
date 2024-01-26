@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>Dane Evans</Author>
+ </Creator>
+ <Manufacturer>Shibari Sydney</Manufacturer>
+ <Model>UV Parcan</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="UV 1" Preset="IntensityUV"/>
+ <Channel Name="UV 2" Preset="IntensityUV"/>
+ <Channel Name="UV 3" Preset="IntensityUV"/>
+ <Channel Name="strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Modes">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Sped">
+  <Group Byte="0">Speed</Group>
+ </Channel>
+ <Mode Name="7">
+  <Channel Number="0" ActsOn="6">Master dimmer</Channel>
+  <Channel Number="1">UV 1</Channel>
+  <Channel Number="2">UV 2</Channel>
+  <Channel Number="3">UV 3</Channel>
+  <Channel Number="4">Sped</Channel>
+  <Channel Number="5">strobe</Channel>
+  <Channel Number="6">Modes</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="200" Height="200" Depth="200"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
