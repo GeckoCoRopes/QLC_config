@@ -1,0 +1,227 @@
+/* QLC+ Black theme by Emerick Herve */
+
+/* ##### Main window ##### */
+QMainWindow, QDialog
+{ 
+ background-color: #404B57; 
+ color: #E6E6E6; 
+}
+
+QRadioButton
+{
+  color: #E6E6E6;
+}
+
+/* ##### Tree (Fixtures) ##### */
+QTreeWidget, QTreeView 
+{ 
+ background-color: #3A444F; 
+ alternate-background-color: #404B57; 
+ color: #E6E6E6; 
+  font-size: 20px;
+}
+
+/* ##### Text (Fixture/In-Out details) ##### */
+QTextBrowser 
+{ 
+ background-color: #3A444F; 
+ color: #E6E6E6; 
+}
+
+/* ##### Editable Fields ##### */
+QComboBox
+{
+ background-color: #5F6F78;
+ color: #e6e6e6;
+}
+
+QLineEdit
+{
+ background-color: #5F6F78;
+ color: #e6e6e6;
+}
+
+EFXEditor QWidget:editable 
+{
+  background-color: #5F6F78;
+  color: #e6e6e6;
+}
+
+/* ##### Universe list ##### */
+QListWidget
+{ 
+    background-color: #3A444F; 
+    color: #E6E6E6; 
+}
+
+/* ##### Splitter ##### */
+QSplitter::handle {
+    background-color: #6f7c8b;
+    border: 0px;
+}
+
+QSplitter::handle:hover {
+    background-color: #787876;
+    border: 0px;
+}
+
+
+/* ##### Toolbars, ... ##### */
+QToolBar {
+    background: #404B57;
+    color: white;
+}
+
+QLabel {
+    color: white;
+    padding: 3px;
+}
+
+MonitorFixture QLabel {
+    color: lightgrey;
+}
+
+QTabWidget::pane {
+    border: 0px;
+}
+
+QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+QTabBar::tab {
+    background: #404B57;
+    border: 0px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: #55616f;
+}
+
+QHeaderView::section {
+    background: #55616f;
+    color: white;
+    border: 0px;
+    padding: 3px;
+}
+
+QGroupBox, QCheckBox {
+    color: #E6E6E6; 
+}
+
+
+/* ##### Scrollbars ##### */
+
+QScrollBar:vertical, QScrollBar:horizontal {
+
+  border: 1px solid #13161a;
+  background-color: #252b33;
+  width: 17px;
+  margin: 21px 0 21px 0;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+  background-color: #5f6d80;
+  min-height: 25px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical, QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: 1px solid #13161a;
+    background-color: #3A444F;
+    height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::add-line:horizontal {
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical, QScrollBar::sub-line:horizontal {
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: #949fac;
+}
+
+/*QScrollBar::up-arrow:vertical
+{
+  image: url(:/BarIcon/Icons/uparrow.png);
+}
+
+QScrollBar::down-arrow:vertical
+{
+  image: url(:/BarIcon/Icons/downarrow.png);
+}*/
+
+/* ##### Toolbar buttons ##### */
+QToolButton
+{
+    color: white;
+    background: transparent;
+}
+
+FixtureConsole QToolButton, ConsoleChannel QToolButton{
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ddedff, stop: 1 #ddedff); /*#de0707;*/
+  padding: 5px;
+  border: none;
+}
+
+QComboBox {
+  background: #778390;
+  border: none;
+  selection-background-color: #778390;
+  selection-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+QComboBox QAbstractItemView {
+  background: #778390;
+  color: #FFFFFF;
+  border: none;
+  selection-color: #FFFFFF;
+  selection-background-color: #314b67;
+}
+
+QComboBox:on {
+  selection-background-color: #314b67;
+  background: #536272;
+}
+
+/* ##### GrandMaster ##### */
+
+GrandMasterSlider QLabel{
+  color:black;
+  /*background-color: transparent;
+  border: 0px solid black;*/
+}
+
+/*GrandMasterSlider ClickAndGoSlider{ //Working
+  background-color:red;
+}
+GrandMasterSlider {  // Not working because overwritten by code...
+  background-color:green;
+  border: 5px solid green;
+  border-radius: 0px; 
+}
+
+ConsoleChannel QGroupBox{
+  background-color: blue;
+  border: 0px solid gray;
+  border-radius: 0px;
+}
+
+FixtureConsole QGroupBox{
+  background-color: blue;
+  border: 0px solid gray;
+  border-radius: 0px;
+}*/
+
+/* ##### Speed Dial ##### */
+SpeedDial QPushButton {
+ color: #000000;
+}
