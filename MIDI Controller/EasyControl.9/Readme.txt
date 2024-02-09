@@ -19,3 +19,6 @@ Suggest keeping the config here up to date to avoid having to redo everything.
 
 The only changes so far are to make the 2 buttons next to the pages one send to different channels on each page. 
 Have verified that the toggle does work. Will struggle in solo frames in QLC, but otherwise may be useful. 
+
+Have set the first several buttons to toggle. 
+Pages are buggy - page 3/4 often program wrong. 
