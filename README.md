@@ -26,3 +26,7 @@ The one from shibari sydney is here .  it has several things that should be impr
 ## Creating shortcuts 
 - Create the shortcut 
 - change the target to `C:\Windows\System32\cmd.exe /c "SET QT_AUTO_SCREEN_SCALE_FACTOR=1 && START /D ^"C:\QLC+^" qlcplus.exe -w -o C:\Users\<PROJECT_PATH>"`
+
+## Midi Controller 
+- Only works on windows.
+- 
