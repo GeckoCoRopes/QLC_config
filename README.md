@@ -14,16 +14,28 @@ The custom one is built off the RJones one I think. It is better to run a show (
 
 
 ## Shows / projects 
-The one from shibari sydney is here .  it has several things that should be improved 
+### Full Mine 
+All my lights, and a set-up virtual conole 
+- single primary, 
+- 2 RGB fills 
+- UV (no patterns)
 
+Midi mapped, can be used for photos
+
+### Shibari Sydney
+The one from shibari sydney is here .  it has several things that should be improved 
 
 - [ ] single colour for fill / uplighting 
 - [ ] clean up all functions / make sure they work 
 - [ ] simplify the tap 
 - [ ] add a physical midi controller
 
+### Adelaide Fringe 
+- UV only 
 
-## Creating shortcuts 
+
+
+## Creating shortcuts on windows
 - Create the shortcut 
 - change the target to `C:\Windows\System32\cmd.exe /c "SET QT_AUTO_SCREEN_SCALE_FACTOR=1 && START /D ^"C:\QLC+^" qlcplus.exe -w -o C:\Users\<PROJECT_PATH>"`
 
