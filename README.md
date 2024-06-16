@@ -42,3 +42,15 @@ The one from shibari sydney is here .  it has several things that should be impr
 ## Midi Controller 
 - Only works on windows.
 - 
+
+
+## Smoke 
+green light is ready. 
+Note  - DMX Address on machine is backwards. 
+Set switch 10 to off. 
+Set the switch you want to OFF 
+
+Control via the remote?? 
+Does work. Set it, and it follows. 
+Seems to override the back? 
+May overrride as soon as the control is plugged in?? 

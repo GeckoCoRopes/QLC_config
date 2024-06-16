@@ -6,7 +6,7 @@
   <Version>4.12.7</Version>
   <Author>Dane Evans</Author>
  </Creator>
- <Manufacturer>Beamz</Manufacturer>
+ <Manufacturer>beamZ</Manufacturer>
  <Model>PS10W</Model>
  <Type>Color Changer</Type>
  <Channel Name="Red" Preset="IntensityRed"/>
