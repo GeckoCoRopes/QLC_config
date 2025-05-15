@@ -4,20 +4,17 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.7</Version>
-  <Author>dane</Author>
+  <Author>Dane Evans</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0">
-    <Input Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0KT9HX)" Line="0">
-     <PluginParameters UniverseChannels="106"/>
-    </Output>
+   <Universe Name="Universe 1" ID="0" Passthrough="True">
+    <Output Plugin="ArtNet" UID="192.168.0.121" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3">
-    <Input Plugin="MIDI" UID="WORLDE" Line="0"/>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -63,9 +60,9 @@
    <ForcedLTP>0</ForcedLTP>
   </Fixture>
   <Fixture>
-   <Manufacturer>beamZ</Manufacturer>
-   <Model>PS10W</Model>
-   <Mode>7</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>7 Channel</Mode>
    <ID>4</ID>
    <Name>Pinspot</Name>
    <Universe>0</Universe>
@@ -471,7 +468,7 @@
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
-    <Mode>2</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>240</StartOffset>
    </Fixture>
@@ -938,7 +935,7 @@
    <Fixture>
     <ID>4</ID>
     <Head>0</Head>
-    <Mode>2</Mode>
+    <Mode>1</Mode>
     <Direction>Forward</Direction>
     <StartOffset>240</StartOffset>
    </Fixture>
@@ -1048,7 +1045,7 @@
       </Appearance>
       <Input Universe="3" Channel="3"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="216">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1066,7 +1063,7 @@
       </Appearance>
       <Input Universe="3" Channel="5"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="24">
        <Channel Fixture="2">0</Channel>
       </Level>
       <Playback>
@@ -1084,7 +1081,7 @@
       </Appearance>
       <Input Universe="3" Channel="6"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="30">
        <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
@@ -1102,7 +1099,7 @@
       </Appearance>
       <Input Universe="3" Channel="4"/>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="12">
        <Channel Fixture="4">0</Channel>
       </Level>
       <Playback>
@@ -2727,7 +2724,7 @@
      </Appearance>
      <Input Universe="3" Channel="18"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="255">
+     <Level LowLimit="0" HighLimit="255" Value="0">
       <Channel Fixture="1">4</Channel>
       <Channel Fixture="1">5</Channel>
       <Channel Fixture="1">6</Channel>
@@ -2748,7 +2745,7 @@
      </Appearance>
      <Input Universe="3" Channel="19"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="255">
+     <Level LowLimit="0" HighLimit="255" Value="0">
       <Channel Fixture="5">4</Channel>
       <Channel Fixture="5">5</Channel>
       <Channel Fixture="5">6</Channel>
@@ -2931,7 +2928,7 @@
      </Appearance>
      <Input Universe="3" Channel="7"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="26">
       <Channel Fixture="1">3</Channel>
      </Level>
      <Playback>
@@ -2949,7 +2946,7 @@
      </Appearance>
      <Input Universe="3" Channel="8"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="14">
       <Channel Fixture="5">3</Channel>
      </Level>
      <Playback>
@@ -3100,7 +3097,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="RGB" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="125">
+      <Level LowLimit="0" HighLimit="255" Value="54">
        <Channel Fixture="2">1</Channel>
        <Channel Fixture="2">2</Channel>
        <Channel Fixture="2">3</Channel>
@@ -3119,7 +3116,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="RGB" Monitor="false">Level</SliderMode>
-      <Level LowLimit="0" HighLimit="255" Value="128">
+      <Level LowLimit="0" HighLimit="255" Value="54">
        <Channel Fixture="3">1</Channel>
        <Channel Fixture="3">2</Channel>
        <Channel Fixture="3">3</Channel>
@@ -3213,24 +3210,6 @@
  </VirtualConsole>
  <SimpleDesk>
   <Engine>
-   <CueStack ID="1">
-    <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
-    <Cue Name="Cue 1">
-     <Value Channel="22">255</Value>
-     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-    </Cue>
-    <Cue Name="Cue 2">
-     <Value Channel="23">255</Value>
-     <Value Channel="22">0</Value>
-     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-    </Cue>
-    <Cue Name="Cue 3">
-     <Value Channel="23">0</Value>
-     <Value Channel="22">0</Value>
-     <Value Channel="24">255</Value>
-     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-    </Cue>
-   </CueStack>
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 4">
@@ -3238,55 +3217,73 @@
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 2">
-     <Value Channel="0">255</Value>
-     <Value Channel="18">255</Value>
-     <Value Channel="11">255</Value>
      <Value Channel="7">255</Value>
+     <Value Channel="11">255</Value>
+     <Value Channel="18">255</Value>
+     <Value Channel="0">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 3">
-     <Value Channel="0">0</Value>
-     <Value Channel="18">255</Value>
-     <Value Channel="11">255</Value>
      <Value Channel="7">0</Value>
+     <Value Channel="11">255</Value>
+     <Value Channel="18">255</Value>
+     <Value Channel="0">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 1">
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 5">
-     <Value Channel="13">255</Value>
-     <Value Channel="12">255</Value>
-     <Value Channel="14">255</Value>
      <Value Channel="11">253</Value>
+     <Value Channel="14">255</Value>
+     <Value Channel="12">255</Value>
+     <Value Channel="13">255</Value>
+     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+    </Cue>
+   </CueStack>
+   <CueStack ID="1">
+    <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
+    <Cue Name="Cue 1">
+     <Value Channel="22">255</Value>
+     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+    </Cue>
+    <Cue Name="Cue 2">
+     <Value Channel="22">0</Value>
+     <Value Channel="23">255</Value>
+     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+    </Cue>
+    <Cue Name="Cue 3">
+     <Value Channel="22">0</Value>
+     <Value Channel="23">0</Value>
+     <Value Channel="24">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
    <CueStack ID="16">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
-     <Value Channel="0">255</Value>
-     <Value Channel="18">255</Value>
      <Value Channel="11">255</Value>
+     <Value Channel="18">255</Value>
+     <Value Channel="0">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 2">
-     <Value Channel="23">237</Value>
      <Value Channel="17">237</Value>
+     <Value Channel="23">237</Value>
+     <Value Channel="11">255</Value>
+     <Value Channel="18">255</Value>
      <Value Channel="0">255</Value>
      <Value Channel="16">195</Value>
-     <Value Channel="18">255</Value>
-     <Value Channel="11">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 3">
-     <Value Channel="23">195</Value>
      <Value Channel="17">49</Value>
-     <Value Channel="0">255</Value>
-     <Value Channel="16">195</Value>
-     <Value Channel="18">255</Value>
+     <Value Channel="23">195</Value>
      <Value Channel="11">255</Value>
      <Value Channel="24">49</Value>
+     <Value Channel="18">255</Value>
+     <Value Channel="0">255</Value>
+     <Value Channel="16">195</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
