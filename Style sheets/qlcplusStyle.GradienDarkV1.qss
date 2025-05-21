@@ -1,0 +1,267 @@
+/* QLC+ Black theme by Emerick Herve */
+
+/* ##### Main window ##### */
+QMainWindow, QDialog
+{ 
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f); 
+ color: #A8A8A8; 
+}
+
+
+ 
+QRadioButton
+{
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2f2f2f, stop: 1 #1f1f1f);
+  color: #ffff00;
+}
+
+QRadioButton:checked{
+    color: #ffff00;
+}
+
+QRadioButton:unchecked{
+   color: #6f6f6f;
+}
+
+/* ##### (Tree Views) ##### */
+QTreeWidget, QTreeView 
+{ 
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #1f1f1f); 
+ alternate-background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #1f1f1f);
+ color: #C7C7C7; 
+  font-size: 17px;
+}
+
+/* ##### Text (Fixture/In-Out details) ##### */
+QTextBrowser 
+{ 
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f);
+ alternate-background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #1f1f1f); 
+ font-size: 17px;
+ color: #c7c7c7; 
+}
+
+/* ##### Editable Fields ##### */
+QComboBox
+{
+ background: #0d0d0d;
+ color: #00ff00;
+}
+
+
+
+QLineEdit
+{
+ background-color: #0d0d0d;
+ font-size: 16px;
+ color: #00ff00;
+}
+
+
+EFXEditor QWidget:editable 
+{
+  background-color: #0d0d0d;
+  font-size: 18px;
+  color: #00ff00;
+}
+
+
+/* ##### Universe list ##### */
+QListWidget
+{ 
+    background-color: #0d0d0d; 
+    font-size: 20px;
+    color: #0d0d0d; 
+}
+
+/* ##### Splitter ##### */
+QSplitter::handle {
+    background-color: #0d0d0d;
+    border-color: #ababab;
+    border: 15px;
+}
+
+QSplitter::handle:hover {
+    background-color: #a2a2a2;
+    border: 0px;
+}
+
+
+/* ##### Toolbars, ... ##### */
+QToolBar {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f);
+    font-size: 16px;
+    font-style:bold;
+    color: #ffff00;
+    border: 1px;
+    border-color: gray;
+}
+
+QLabel {
+    color: #ffff00;
+    font-size: 16px;
+    font-style:bold;
+    padding: 5px;
+}
+
+MonitorFixture QLabel {
+    color: transparent;
+}
+
+QTabWidget::pane {
+    color: qlineargradient(x1: 0, y1: 1, x2: 1, y2: 0, stop: 0 #2f2f2f, stop: 1 #4f4f4f);
+    border: none;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;    
+}
+
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f);;
+    font-size: 15px;
+    padding: 9px;
+    color: #ffffff;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #0A4D1A, stop: 1 #1f1f1f );
+}
+
+QHeaderView::section {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #4a4a4a, stop: 1 #0d0d0d);
+    color: #ffffff;
+    font-size: 16px;
+    border: 0px;
+    padding: 5px;
+}
+
+QGroupBox, QGroupBox::title {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #3f3f3f, stop: 1 #1f1f1f);
+    font-size: 14px;
+    color: #ffffff;
+    
+
+    
+}
+
+
+QCheckBox {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2f2f2f, stop: 1 #1f1f1f);
+  color: #ffff00;
+  font-size: 14px;
+  }
+  
+  
+QCheckBox:checked{
+    color: #ffff00;
+}
+
+QCheckBox:unchecked{
+   color: #6f6f6f;
+} 
+
+/* ##### Scrollbars ##### */
+QScrollBar:horizontal {
+
+  border: 0px solid #0d0d0d;
+  background-color: #0d0d0d;
+  height: 17px;
+  margin: 21px 0;
+
+}
+
+QScrollBar::handle:horizontal {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #4a4a4a, stop: 1 #0d0d0d);;
+  min-height: 25px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+
+
+
+QScrollBar:vertical { 
+  background-color: #0d0d0d;
+  width: 17px;
+  margin: 0px 
+}
+
+QScrollBar::handle:vertical {
+  background-color: qlineargradient(x1: 1, y1: 0, x2: 0, y2: 0, stop: 0 #4a4a4a, stop: 1 #0d0d0d);
+  min-height: 5px;
+   subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+
+
+/* ##### Toolbar buttons ##### */
+QToolButton
+{
+    color: #0d0d0d;
+    background: transparent;
+}
+
+FixtureConsole QToolButton, ConsoleChannel QToolButton{
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+}
+
+QComboBox {
+  background: #0d0d0d;
+  border: none;
+  selection-background-color: #00ff00;
+  selection-color: #2a2a2a;
+  color: #00ff00;
+}
+
+QComboBox QAbstractItemView {
+  background: #0d0d0d;
+  color: #00ffff;
+  border: none;
+  selection-color: #FFFFFF;
+  selection-background-color: #0d0d0d;
+}
+
+QComboBox:on {
+  selection-background-color: #ffff00;
+  background: #0d0d0d;
+}
+
+/* ##### GrandMaster ##### */
+
+GrandMasterSlider QLabel{
+  background-color: transparent;
+  color:#00ff00;
+  font-size: 10px;
+  border: 0px solid black;
+}
+
+GrandMasterSlider ClickAndGoSlider{ //Working
+  background-color:#0d0d0d;
+}
+GrandMasterSlider {  // Not working because overwritten by code...
+  background-color:green;
+  border: 0px solid green;
+  border-radius: 0px; 
+}
+
+
+ConsoleChannel QGroupBox{
+  background-color: #0d0d0d;
+  border: 0px solid gray;
+  border-radius: 0px;
+}
+
+FixtureConsole QGroupBox{
+  background-color: #0d0d0d;
+  border: 0px solid gray;
+  border-radius: 0px;
+}*/
+
+/* ##### Speed Dial ##### */
+SpeedDial QPushButton {
+ color: #0d0d0d;
+}

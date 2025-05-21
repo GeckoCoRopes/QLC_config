@@ -1,0 +1,391 @@
+/* QLC+ Black Gradient by Russell Jones /*
+
+
+/*Created 6/8/2023 */
+/*Updated 6/9/2023 */
+
+/*Please use the Instructions on the QLC Forum and Documentation on how to install on your operating system*/
+
+/* ##### Main window ##### */
+
+
+
+
+    
+QMainWindow, QScrollBar, Qsplitter, QToolBar
+{ 
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f); 
+ border: 1px qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #0d0d0d, stop: 1 #2f2f2f); 
+ 
+ font-color: #00ff00;
+ font-weight: bold;
+ 
+}
+
+/* ##### Dialog Windows ##### */
+
+
+QDialog {
+
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #0d0d0d, stop: 1 #1f1f1f);
+    font-size: 19px;
+    font-weight: bold;
+    
+    }
+
+
+ /* ##### QLabel (Various Text, VC Values/top of sliders ##### */   
+
+QLabel {
+    color: #ffff00;
+    font-size: 16px;
+    font-style:bold;
+    padding: 5px;
+}
+
+
+/* ##### Headers ##### */  
+
+QHeaderView::section {
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                      stop:0 #0d0d0d, stop: 0.5 #1f1f1f,
+                                      stop: 0.6 #2f2f2f, stop:1 #3f3f3f);
+    color: #ffff00;
+    size: 18px;
+    weight:bold;
+    padding-left: 4px;
+    
+}
+
+/* ##### Group Boxes (aka. Sections in Pop-up Windows) ##### */  
+
+QHeaderView::section:checked
+{
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                      stop:0 #3f3f3f, stop: 0.5 #4f4f4f,
+                                      stop: 0.6 #4f4f4f, stop:1 #5f5f5f);
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 1, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #2f2f2f, stop: 1 #1f1f1f);
+    border: 2px #1f1f1f;
+    border-radius: 5px;
+    margin-top: 2ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 6px;
+    background: #0d0d0d;
+    color: #ffff00;
+   
+ 
+}
+
+/* ##### Trees and Lists ##### */
+    
+    
+ QTreeView, QListView {
+alternate-background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 1, stop: 0 #1f1f1f, stop: 1 #3f3f3f);
+}
+
+
+
+
+
+QTreeWidget
+{ 
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #2f2f2f); 
+ alternate-background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 1, stop: 0 #1f1f1f, stop: 1 #3f3f3f);
+ color: #C7C7C7;
+ alternate-color: #ffffff; 
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ##### Text Browser Window (ie. Fixture Details) ##### */
+
+QTextBrowser {
+ background-color: #0f0f0f;
+ alternate-background-color: #1f1f1f;
+ title-color: #4f4f4f;
+ body-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 1, stop: 0 #1f1f1f, stop: 1 #3f3f3f);
+ color: #C7C7C7;
+ font-size:17px
+ }
+ 
+ 
+ /* ##### Lists (ie. Channel List in Add Fixture Window) ##### */
+QListWidget
+{ 
+    background-color:qlineargradient(x1: 0, y1: 1, x2: 1, y2: 0, stop: 0 #2f2f2f, stop: 1 #4f4f4f);
+    alternate-background-color: qlineargradient(x1: 0, y1: 1, x2: 1, y2: 0, stop: 0 #2f2f2f, stop: 1 #4f4f4f);
+    font-size: 15px;
+    color: #ffffff; 
+}
+   
+ /* ##### Tables (Fixture Group Placement) ##### */   
+    
+    
+ QTableView {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #2f2f2f);
+     color: #00ff00;
+     selection-background-color: #3f3f3f;
+ }
+
+
+
+  
+
+ /* ##### Push Buttons (ie. OK, Cancel) ##### */   
+
+
+    
+QPushButton {
+    border: 2px solid #1f1f1f;
+    border-radius: 4px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #1f1f1f, stop: 1 #3f3f3f);
+    color: #00ff00;
+    font-size: 15px;
+                                      
+  
+    min-width: 80px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #3f3f3f, stop: 1 #5f3f3f);
+}
+
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+QPushButton:default {
+    border-color: #4f4f4f; /* make the default button prominent */
+}
+
+
+
+
+
+/* ##### Spin Box (Editable Box with Up/Down Arrows... This one took awhile to figure out for some reason!) ##### */   
+
+QSpinBox {
+    background-color: #0d0d0d ;
+    color: #00ff00;
+    padding: 2px;
+    
+
+}    
+
+
+
+
+
+
+
+/* ##### Combo Box (Dropdown) ##### */  
+     
+QComboBox {
+    border: 1px #0d0d0d;
+    border-radius: 1px;
+    padding: 0px 12px 0px 0px;
+    min-width: 6em;
+  
+}
+
+QComboBox:editable {
+    background: #0d0d0d;
+    color: #00ff00;
+    weight: bold;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: #0d0d0d;
+     
+     
+}
+
+
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: #1f1f1f;
+
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 2px;
+    padding-left: 3px;
+    
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+   
+}
+
+}
+QComboBox QAbstractItemView {
+  background: #0d0d0d;
+  color: #00ff00;
+  selection-background: #3f3f3f;
+  selection-color: #ffff00;
+  
+  }
+  
+
+/* Checkboxes and Radio Buttons*/
+
+
+QCheckBox {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2f2f2f, stop: 1 #1f1f1f);
+  color: #ffff00;
+  font-size: 14px;
+  }
+  
+  
+QCheckBox:checked{
+    color: #ffff00;
+}
+
+QCheckBox:unchecked{
+   color: #6f6f6f;
+} 
+
+QRadioButton
+{
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2f2f2f, stop: 1 #1f1f1f);
+  color: #ffff00;
+}
+
+QRadioButton:checked{
+    color: #ffff00;
+}
+
+QRadioButton:unchecked{
+   color: #6f6f6f;
+}
+
+
+/*Work in Progress... get it?
+
+QProgressBar {
+    background-color: #0d0d0d;
+    border: 2px #1f1f1f;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #00ff00;
+    width: 20px;
+    
+}
+
+*/
+
+QLineEdit
+{
+ background-color: #0d0d0d;
+ font-size: 16px;
+ color: #00ff00;
+}
+
+/* Scene Edit Sliders ***WORK IN PROGRESS   PLEASE HELP HERE**** Cant get rid of White border/padding around Sliders */
+FixtureConsole QWidget, QgroupBox {
+    background-color:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #1f1f1f, stop: 1 #0d0d0d);
+    padding: 5px;                                  
+    border: 5px #0f0f0f;                                 
+    
+    
+    color: #00ff00;
+    }
+
+/*####Tab Bars#### */
+
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0d0d0d, stop: 1 #2f2f2f);
+}
+
+QTabWidget::tab-bar {
+    alignment: center; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #1f1f1f, stop: 0.4 #1f1f1f,
+                                stop: 0.5 #2f2f2f, stop: 1.0 #3f3f3f);
+    color: #ffff00;
+    font-size: 17px;
+    font-weight: bold;                            
+    border: 2px solid #3f3f3f;
+    border-bottom-color: #0d0d0d; /* same as the pane color */
+    border-top-color: #0d0d0d;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-width: 20ex;
+    padding: 5px;
+    padding-left 10px;
+    padding-right 10px;
+}
+
+
+
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #0d0d0d, stop: 0.4 #2d2d2d,
+                                stop: 0.5 #4d4d4d, stop: 1.0 #5d5d5d);
+}
+QHeaderView::section {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #4a4a4a, stop: 1 #0d0d0d);
+    color: #ffff00;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+}
+
+QToolBox::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #0d0d0d, stop: 0.4 #0f0f0f,
+                                stop: 0.5 #1f1f1f, stop: 1.0 #3f3f3f);
+    border-radius: 5px;
+    color: #1f1f1f;
+}
+
+QToolBox::tab:selected { /* italicize selected tabs */
+    font: italic;
+    color: white;
+}
+
+QToolButton { /* all types of tool button */
+    border: 0px;
+    border-radius: 5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #1f1f1f, stop: 1 #3f3f3f);
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+QToolButton[popupMode="1"] { /* only for MenuButtonPopup */
+    padding-right: 20px; /* make way for the popup button */
+}
+
+QToolButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #0d0d0d, stop: 1 #3f3f3f);
+}    
+
+
